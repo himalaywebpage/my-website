@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Useful Government Links</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #6c63ff, #3f3d56);
+      color: white;
+      padding: 30px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .link-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .link-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .link-card a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back-btn {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .back-btn a {
+      color: #fff;
+      background: #6c63ff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .back-btn a:hover {
+      background: #4a45c9;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 Useful Government Websites</h1>
+
+  <div class="links-grid">
+    <div class="link-card">
+      <a href="https://ssc.nic.in" target="_blank">SSC Jobs</a>
+    </div>
+    <div class="link-card">
+      <a href="https://upsc.gov.in" target="_blank">UPSC Official</a>
+    </div>
+    <div class="link-card">
+      <a href="https://uidai.gov.in" target="_blank">Aadhar Card</a>
+    </div>
+    <div class="link-card">
+      <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank">PAN Card</a>
+    </div>
+    <div class="link-card">
+      <a href="https://voters.eci.gov.in" target="_blank">Voter ID</a>
+    </div>
+    <div class="link-card">
+      <a href="https://www.india.gov.in/apply-birth-certificate" target="_blank">Birth Certificate</a>
+    </div>
+    <div class="link-card">
+      <a href="https://services.india.gov.in/" target="_blank">Caste & Domicile Certificates</a>
+    </div>
+  </div>
+
+  <div class="back-btn">
+    <a href="index.html">⬅ Back to Home</a>
+  </div>
+</body>
+</html>

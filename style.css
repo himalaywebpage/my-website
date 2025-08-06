@@ -1,0 +1,144 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('ad.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  transition: background 1s ease-in-out;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Profile Card */
+.profile-container {
+  background: rgba(136, 37, 37, 0.05);
+  padding: 30px 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Profile Image */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #6c63ff;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Name & Bio */
+.name {
+  font-size: 24px;
+  color: #6c63ff;
+  margin-bottom: 5px;
+}
+
+.bio {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.facebook { background: #3b5998; }
+.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.youtube { background: #ff0000; }
+.whatsapp { background: #25D366; }
+
+/* Next Box */
+.next-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-box a {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Next Card */
+.next-card {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  padding: 25px 40px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.next-card h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.next-card p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.next-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Date/Time */
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #6c63ff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1000;
+}
